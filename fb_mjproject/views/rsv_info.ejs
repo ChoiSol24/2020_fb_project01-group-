@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 여기서부터  -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css?ver=1"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- 여기까지 부트스트랩 -->
+  <style>
+    @import url(style.css);
+  </style>
+  <script>
+    
+  </script>
+  <body>
+    <div class="container">
+      <div class= "text-center col-12">
+        <h1>
+            <%=row.manager%>          
+        </h1>
+        <br>
+        <h5>
+          수용 인원 : n <br>
+          담당자 : XXX <br>
+          문의 전화 : 010 - XXX -XXXX
+        </h5>
+        <br>
+      </div>
+      <div class="row">
+        <div class="text-center col-12">
+        <table class = "table table-striped">
+          <thead>
+            <tr>
+              <th>
+                시간
+              </th>
+              <th>
+                월
+              </th>
+              <th>
+                화
+              </th>
+              <th>
+                수
+              </th>
+              <th>
+                목
+              </th>
+              <th>
+                금
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                9 - 10
+              </td>
+              <td>o</td>
+              <td>o</td>
+              <td>o</td>
+              <td>o</td>
+              <td>o</td>
+            </tr>
+          <tr>
+            <td>
+              10 - 11
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>
+              11 - 12
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>
+              12 - 13
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>
+              14 - 15
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>
+              15 - 16
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          <tr>
+            <td>
+              16 - 17
+            </td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+            <td>o</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center font-weight-bold col-12" style="margin:10% 0 10% 0;">
+      <p>
+        1. 강의실 정보와 사용 가능한 시간을 위에서 확인해주세요 <br><br>
+        2. 강의실을 예약하려면 하단의 버튼을 눌러 폼을 작성해주세요 <br>
+      </p>
+      <button type="btn" class="btn btn-outline-primary" onclick="location.href='/rsv/form'">
+        예약
+     </button>
+      </div>
+      
+      <div class="text-center col-12" style="background:navy;">
+      <button type="btn" class="btn" style="color:white; border : 0;" onclick="location.href='/form'">
+        Main
+     </button>
+    </div>
+    </div>
+    </div>
+  </body>

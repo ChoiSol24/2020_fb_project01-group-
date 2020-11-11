@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 여기서부터  -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css?ver=1"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- 여기까지 부트스트랩 -->
+    <!-- 여기서부터-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- 여기까지 moment.js--> 
+    <style>
+      @import url(style.css);
+      label {
+        display: block;
+      }
+      label span {
+        display: inline-block;
+        padding: 20px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function getday() {
+        var day1;
+        day1 = documemt.write(moment().format('MM월 DD일'));
+        return day1;
+        }
+    </script>
+    <div class="container">
+      <div class= "text-center col-12">
+        <h1>
+          강의실 예약 메일 보내기
+        </h1>
+        <form>
+          <label>
+            <span>개인정보 수집 동의</span><input type="radio" name="agree" value="예">예
+          </label>
+          <label>
+            <span>대표자</span><textarea placeholder="이름/학번/전화번호를 기재해주세요"></textarea>
+          </label>
+          <label>
+            <span>참여자</span><textarea placeholder="이름/학번/전화번호를 기재해주세요"></textarea>
+          </label>
+          <label>
+            <span>날짜</span><input type="text" list="date"><br>
+              <datalist id="date">
+                <option value="getday()"></option>
+              </datalist>
+          </label>
+          <label>
+            <span>시간</span><input type="text" list="time"><br>
+              <datalist id="time">
+                <option value="9시~10시"></option>
+                <option value="10시~11시"></option>
+                <option value="11시~12시"></option>
+                <option value="12시~13시"></option>
+                <option value="13시~14시"></option>
+                <option value="14시~15시"></option>
+                <option value="15시~16시"></option>
+                <option value="16시~17시"></option>
+                <option value="17시~18시"></option>
+                <option value="18시~19시"></option>
+                <option value="19시~20시"></option>
+                <option value="20시~21시"></option>
+                <option value="21시~22시"></option>
+              </datalist>
+          </label>    
+        </form>
+        <p>
+          +주의사항<br>
+          1. 승인 메일을 교학팀에 확인받고 강의실을 이용<br>
+          2. 메일 제출 후, 수정 사항이 있거나 취소시, 010 - xxxx- tttttt 로 연락.
+        </p>
+        <hr>
+        <form>
+          <button type="submit" class="btn btn-primary">
+            제출
+          </button>
+        </form>
+      </div>
+    </div> 
+  </body>
+</html>
